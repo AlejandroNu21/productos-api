@@ -1,7 +1,6 @@
 # Productos API 
 
-Esta es una API desarrollada en Go (Golang) que simula un backend para una tienda en línea de productos tecnológicos. 
-Permite realizar operaciones CRUD sobre productos del inventario.
+Esta es una API RESTful sencilla desarrollada en **Go (Golang)** que simula un backend para una tienda en línea de productos tecnológicos. Permite realizar operaciones CRUD (crear, leer, actualizar y eliminar) sobre productos del inventario.
 
 ---
 
@@ -31,7 +30,7 @@ Permite realizar operaciones CRUD sobre productos del inventario.
    cd productos-api
 
 2. **Abrir Archivo en Visual Studio Code**:
-Abre la terminal y ejecuta tu programa:
+Abre la terminal y ejecuta la API:
 - go run main.go
 - Servidor corriendo en http://localhost:8080
 
@@ -40,7 +39,7 @@ Crear un producto (POST):
 - En Postman, haz clic en "New" > HTTP Request
 - Método: POST
 - URL: http://localhost:8080/api/productos
-- Ir a la pestaña "Body", selecciona "raw" y seleccionar tipo JSON.
+- Ir a la pestaña "Body", seleccionar "raw" y elegir tipo JSON.
 
 Escribir algo como:
 {
@@ -53,13 +52,13 @@ Escribir algo como:
 
 **Ver todos los productos (GET)**
 - Método: GET
-- URL: http://localhost:8080/api/productos?id=1 (cambiar el Id según el producto)
+- URL: http://localhost:8080/api/productos
 - Hacer clic en "Send"
 
 
 **Actualizar un producto (PUT)**
 - Método: PUT
-- URL: http://localhost:8080/api/productos?id=1
+- URL: http://localhost:8080/api/productos?id=1 (Cambiar id por el que se desea actualizar)
 - Ir a Body > raw > JSON y escribir algo como:
 
 {
@@ -75,6 +74,6 @@ Escribir algo como:
 
 **Eliminar un producto (DELETE)**
 - Método: DELETE
-- URL: http://localhost:8080/api/productos?id=1
-- Haz clic en "Send"
+- URL: http://localhost:8080/api/productos?id=1 (Cambiar id por el que se desea eliminar)
+- Hacer clic en "Send"
 - saldrá el mensaje: "Producto eliminado"
