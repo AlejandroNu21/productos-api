@@ -40,7 +40,7 @@ Crear un producto (POST):
 - En Postman, haz clic en "New" > HTTP Request
 - Método: POST
 - URL: http://localhost:8080/api/productos
-- Ve a la pestaña "Body", selecciona "raw" y elige tipo JSON.
+- Ir a la pestaña "Body", selecciona "raw" y seleccionar tipo JSON.
 
 Escribir algo como:
 {
@@ -54,13 +54,13 @@ Escribir algo como:
 **Ver todos los productos (GET)**
 - Método: GET
 - URL: http://localhost:8080/api/productos?id=1 (cambiar el Id según el producto)
-- Haz clic en "Send"
+- Hacer clic en "Send"
 
 
 **Actualizar un producto (PUT)**
 - Método: PUT
 - URL: http://localhost:8080/api/productos?id=1
-- Ve a Body > raw > JSON y escribe algo como:
+- Ir a Body > raw > JSON y escribir algo como:
 
 {
   "nombre": "Mouse Pro XL",
